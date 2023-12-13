@@ -1334,7 +1334,7 @@ namespace RACE.Controllers
                                 cell.Colspan = 4; cell.HorizontalAlignment = 0; cell.Border = 0; cell.Padding = 5; table.AddCell(cell);
                                 cell = new PdfPCell(new Phrase(details[i].Description, font10));
                                 cell.Colspan = 9; cell.HorizontalAlignment = 0; cell.Border = 0; cell.Padding = 5; table.AddCell(cell);
-                                cell = new PdfPCell(new Phrase(details[i].Qty.ToString("N4"), font10));
+                                cell = new PdfPCell(new Phrase(details[i].Qty.ToString("0.####"), font10));
                                 cell.Colspan = 3; cell.HorizontalAlignment = 0; cell.Border = 0; cell.Padding = 5; table.AddCell(cell);
                                 cell = new PdfPCell(new Phrase(uom.OptionName, font10));
                                 cell.Colspan = 2; cell.HorizontalAlignment = 0; cell.Border = 0; cell.Padding = 5; table.AddCell(cell);
